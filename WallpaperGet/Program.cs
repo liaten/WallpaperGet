@@ -1,4 +1,5 @@
 ﻿using System.Net;
+
 namespace WallpaperGet
 {
     public static class Program
@@ -44,9 +45,9 @@ namespace WallpaperGet
              * System.Windows.SystemParameters.PrimaryScreenWidth
              * System.Windows.SystemParameters.PrimaryScreenHeight
             */
-            short width = (short)System.Windows.SystemParameters.PrimaryScreenWidth;
-            short height = (short)System.Windows.SystemParameters.PrimaryScreenHeight;
-            try { Download(OuterWebClient: new(), height, width); }
+            short width = 1920;
+            short height = 1080;
+            try { Download(OuterWebClient: new(), width, height); }
             catch { }
             try
             {

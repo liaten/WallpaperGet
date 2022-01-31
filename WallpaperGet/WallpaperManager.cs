@@ -23,9 +23,9 @@ namespace WallpaperGet
 
         public static void Set(string imgPath, Style style)
         {
-            var img = Image.FromFile(Path.GetFullPath(imgPath));
-            string tempPath = Path.Combine(Path.GetTempPath(), "wallpaper.bmp");
-            img.Save(tempPath, ImageFormat.Bmp);
+            Image? img = Image.FromFile(Path.GetFullPath(imgPath));
+            string tempPath = Path.Combine(Path.GetTempPath(), "wallpaper.jpg");
+            img.Save(tempPath, ImageFormat.Jpeg);
 
             var key = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop", true);
 
