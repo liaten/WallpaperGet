@@ -64,13 +64,6 @@ namespace WallpaperGet
                 }
                 catch { }
             }
-            /*
-            Console.Write("Press the Q Key to escape out of program: ");
-            while (Console.ReadKey(true).Key != ConsoleKey.Q)
-            {
-                continue;
-            }
-            */
         }
     }
 }
